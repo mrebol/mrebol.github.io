@@ -2202,6 +2202,7 @@ input, select, textarea {
 			display: block;
 			height: 20em;
 			border-radius: 0;
+			horiz-align: center;
 		}
 
 			.image.main img {
@@ -2663,11 +2664,19 @@ input, select, textarea {
 			padding-top: 0;
 		}
 
+		.features article .horizontal-layout .image {
+			width: 48%;
+		}
+
+		.features article .vertical-layout .image {
+			width: 100%;
+			padding-bottom: 2.5em;
+		}
+
 		.features article .image {
 			display: inline-block;
 			padding-right: 2.5em;
 			vertical-align: middle;
-			width: 48%;
 		}
 
 			.features article .image img {
@@ -2675,10 +2684,13 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		.features article .inner {
+		.features article .horizontal-layout .inner {
+			width: 50%;
+		}
+
+		.features article  .inner {
 			display: inline-block;
 			vertical-align: middle;
-			width: 50%;
 		}
 
 			.features article .inner > :last-child {
@@ -3162,17 +3174,29 @@ input, select, textarea {
 
 		/* Features */
 
-			.features article .image {
+			.features article .vertical-layout .image {
 				display: block;
 				margin: 0 0 2.25em 0;
-				padding-right: 0;
+				padding-bottom: 0;
 				width: 100%;
 			}
 
-			.features article .inner {
+			.features article .vertical-layout .inner {
 				display: block;
 				width: 100%;
 			}
+
+		.features article .horizontal-layout .image {
+			display: block;
+			margin: 0 0 2.25em 0;
+			padding-right: 0;
+			width: 100%;
+		}
+
+		.features article .horizontal-layout .inner {
+			display: block;
+			width: 100%;
+		}
 
 		/* Header */
 
@@ -3314,3 +3338,8 @@ input, select, textarea {
 			}
 
 	}
+
+/* Figure */
+figcaption {
+	font-size: 0.75em;
+}
